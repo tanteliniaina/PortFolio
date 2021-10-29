@@ -1,0 +1,38 @@
+<!-- works in Angular 12 + Angular Material 12 as of May 16, 2021 -->
+<!--<mat-toolbar color="primary">
+    <mat-toolbar-row #toolbarRow>
+      <a mat-button [routerLink]="['/about']">Mon propos</a>
+      <a mat-button [routerLink]="['/curcus']">Mon curcus</a>
+      <a mat-button [routerLink]="['/experiences']">Mes expériences</a>
+      <a mat-button [routerLink]="['/goal']">Mes objectifs</a>
+    </mat-toolbar-row>
+</mat-toolbar>-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        
+        <a class="navbar-brand" href="#" routerLink="about">
+            <img src="../../assets/Pictures/favicon.ico" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-item nav-link" href="#" routerLink="about">Mon propos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-item nav-link" href="#" routerLink="curcus">Mon curcus</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-item nav-link" href="#" routerLink="experiences">Mes expériences</a>
+            </li>  
+            <li class="nav-item">
+            <a class="nav-item nav-link" href="#" routerLink="goals">Mes objectifs</a>
+            </li> 
+        </ul>
+        </div>
+    </div>
+</nav>
